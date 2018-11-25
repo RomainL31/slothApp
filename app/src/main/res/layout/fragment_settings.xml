@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sloth.slothapp.SettingsFragment"
+    android:background="@color/colorPrimary">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:isScrollContainer="true">
+
+        <TextView
+            android:text="Changer l'adresse email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/ETSettingsNewMail"
+            android:layout_margin="10dp"
+            android:hint="Nouvelle adresse email"
+            android:textColor="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondaryLight"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/ETSettingsNewMailConfirm"
+            android:layout_margin="10dp"
+            android:hint="Confirmez la nouvelle adresse email"
+            android:textColor="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondaryLight"
+            android:textSize="14sp" />
+
+        <TextView
+            android:text="Changer le mot de passe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/ETSettingsOldPassword"
+            android:layout_margin="10dp"
+            android:hint="Ancien mot de passe"
+            android:textColor="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondaryLight"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/ETSettingsNewPassword"
+            android:layout_margin="10dp"
+            android:hint="Nouveau mot de passe"
+            android:textColor="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondaryLight"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/ETSettingsNewPasswordConfirm"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondaryLight"
+            android:hint="Confirmez le nouveau mot de passe"
+            android:textSize="14sp" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Notifications"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"
+            android:thumbTint="@color/colorSecondary" />
+
+        <Button
+            android:text="Enregistrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/BTSettingsSave"
+            android:layout_margin="20dp"
+            android:background="@color/colorSecondary" />
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+    </LinearLayout>
+
+</RelativeLayout>
